@@ -1,2 +1,2 @@
 # rwdweb
-practice responsive web design
+responsive web design example
