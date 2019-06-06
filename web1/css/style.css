@@ -1,3 +1,4 @@
+*{font-family: '微軟正黑體';}
 /* 上下內距 */
 .box-30{
     padding-top: 30px;
@@ -17,9 +18,10 @@
 	/* 上下內距，左右內距值為零 */
 	padding: 50px 0px;
 	/* 背景圖片來源 */
-	background-image: url(../images/Banner.jpg);
+	background-image: url(../images/taiwan.jpg);
 	/* 背景圖片尺寸 */
 	background-size: cover;
+	height: 700px;
 	/* 圖片是否重複產生 */
 	background-repeat: no-repeat;
 	/* 背景圖片固定 */
