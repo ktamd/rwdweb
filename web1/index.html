@@ -3,16 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<title>台灣旅遊景點-官方網站</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='images/Flag-of-Taiwan.ico' rel='icon' type='image/x-icon'/>
 	<!-- css-->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- js-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+<!--導覽列--> 
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg topmenu">
+      <a class="navbar-brand" href="./">
+        <i class="fas fa-map fa-1x mx-2"></i>
+        台灣旅遊網</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-align-right text-light"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <!--讓按鈕跑向右側 -->
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">好康報報</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">最新訊息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
 <!--頁首/開始-->
 <header class="header">
 	<div class="container">
@@ -31,40 +66,39 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-8">
-				<h2 class="text-warning">
-					<strong>台灣走走逛逛</strong>
+				<h2 class="text-white">
+					<strong><cite>台灣走走逛逛</cite></strong>
 				</h2>
 				<p class="text-white">臺灣是位於亞洲東部、太平洋西北側的島嶼，地處琉球群島與菲律賓群島之間，西隔臺灣海峽與中國大陸相望，周圍海域從3點鐘方向以順時鐘排序分別為太平洋、巴士海峽、南海、臺灣海峽、東海所環繞，為東亞島弧中一島。面積約3.6萬平方公里，為世界第38大島嶼，其中七成為山地與丘陵，平原則主要集中於西部沿海，地形海拔變化大。
-					<span class="bg-danger">welcome to Taiwan.</span>
+					<span class="bg-success">welcome to Taiwan.</span>
 				</p>
 			</div>
-			<div class="col-12 col-md-4">
+			<div class="col-12 col-md-3 ">
 				<h2 class="text-warning">
-					<strong>DOWNLOAD</strong>
+					<strong>旅遊導覽下載</strong>
 				</h2>
 				<div class="btn-group mb-2">
 					<button type="button" class="btn btn-warning btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<em>MAC DOWNLOAD</em>
+						<em>PDF檔 </em>
 					</button>
 					<div class="dropdown-menu">
-						<h6 class="dropdown-header">系統版本</h6>
-						<a href="#" class="dropdown-item">macOS Sierra</a>
-						<a href="#" class="dropdown-item">OS X 10.11</a>
-						<a href="#" class="dropdown-item">OS X 10.10</a>
+						<h6 class="dropdown-header">旅遊書</h6>
+						<a href="#" class="dropdown-item">台北旅遊書</a>
+						<a href="#" class="dropdown-item">台中旅遊書</a>
+						<a href="#" class="dropdown-item">台南旅遊書</a>
 					</div>
 				</div>
 				<div class="btn-group">
 					<button type="button" class="btn btn-danger btn-lg">
-						<em>PC DOWNLOAD</em>
+						<em>WORD檔</em>
 					</button>
 					<button type="button" class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>
 					</button>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a href="#" class="dropdown-item">Windows 10</a>
-						<a href="#" class="dropdown-item">Windows 8</a>
-						<div class="dropdown-divider"></div>
-						<a  href="#" class="dropdown-item disabled">Windows xp</a>
+						<a href="#" class="dropdown-item">台北旅遊書</a>
+						<a href="#" class="dropdown-item">台中旅遊書</a>
+						<a href="#" class="dropdown-item">台南旅遊書</a>
 					</div>
 				</div>
 			</div>
@@ -75,13 +109,13 @@
 
 <!--場景介紹/開始-->
 <section class="box-30">
-	<div class="container">
+	<div class="container" id="intro">
 		<h2 class="text-center mb-4">
 			<strong>場景介紹</strong>
 		</h2>
-		<div class="row">
+		<div class="row" >
 			<div class="col-12 col-sm-6 col-md-3 mb-4">
-				<div class="card bg-warning p-1">
+				<div class="card bg-warning p-1 polyboard">
 					<a href="#" data-toggle="popover" data-trigger="hover" title="台北市" data-content="101大樓" data-placement="top">
 						<img src="images/taipei.jpg" alt="城市：台北市" class="card-img-top">
 					</a>
@@ -92,7 +126,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-4">
-				<div class="card bg-light p-1">
+				<div class="card bg-light p-1 polyboard">
 					<a href="#" data-toggle="popover" data-trigger="hover" title="台中市" data-content="七期" data-placement="top">
 						<img src="images/taichung.jpg" alt="城市：台中市" class="card-img-top">
 					</a>
@@ -103,7 +137,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-4">
-				<div class="card bg-warning p-1">
+				<div class="card bg-warning p-1 polyboard">
 					<a href="#" data-toggle="popover" data-trigger="hover" title="台南市" data-content="安平" data-placement="top">
 						<img src="images/tainan.jpg" alt="城市：台南市" class="card-img-top">
 					</a>
@@ -114,7 +148,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-4">
-				<div class="card bg-light p-1">
+				<div class="card bg-light p-1 polyboard">
 					<a href="#" data-toggle="popover" data-trigger="hover" title="高雄市" data-content="美麗島捷運" data-placement="top">
 						<img src="images/kaoshung.jpg" alt="城市：高雄市" class="card-img-top">
 					</a>
@@ -128,7 +162,7 @@
 		<!-- 分頁/開始 -->
 		<div class="row mt-3">
 			<div class="col-12">
-				<nav aria-label="Page navigation example">
+				<nav aria-label="Page navigation example ">
 					<ul class="pagination justify-content-center">
 						<li class="page-item">
 							<a href="#" class="page-link" aria-label="Previous">
@@ -162,7 +196,7 @@
 
 <!--人氣景點/開始-->
 <section class="bg-dark box-30">
-	<div class="container">
+	<div class="container section-2">
 		<h2 class="text-center text-light mb-4">
 			<strong>人氣旅遊景點</strong>
 		</h2>
@@ -204,11 +238,11 @@
 	<div class="container">
 		<div class="row">
 			<!-- 建議/開始 -->
-			<div class="col-12">
+			<div class="col-12" id="contact">
 				<form action="">
 					<div class="card border-success w-100">
 						<div class="card-header bg-success">
-							<h3 class="text-white">聯繫資料填寫</h3>
+							<h3 class="text-white" >聯繫我們</h3>
 						</div>
 						<div class="card-body bg-transparents">
 							<div class="input-group input-group-lg mb-2">
@@ -264,21 +298,21 @@
             <!-- 建議/結束 -->
             
 			<!-- Modal/開始 -->
-			<div class="modal fade" id="myModal" tabindex="1">
+			<div class="modal fade" id="myModal" tabindex="-1">
 				<div class="modal-dialog modal-lg">
 					<!-- Modal content-->
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title">聯繫資料填寫</h4>
-							<button type="button">
-								<span>&times;</span>
+							<h4 class="modal-title">聯繫我們</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-label="close">
+								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div>
-							<p>感謝您的填寫，聯繫資料已送出，請注意兌獎日期</p>
+						<div class="modal-body">
+							<p>感謝您的填寫，聯繫資料已送出</p>
 						</div>
-						<div>
-							<button type="button">關閉</button>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">關閉</button>
 						</div>
 					</div>
 				</div>
@@ -289,14 +323,31 @@
 </section>
 <!--改善建議/結束-->
 <!--頁腳/開始-->
-<footer class="mt-5 bg-dark footer-content">
-	<p class="text-center text-white mb-0">© 2017 123learngo</p>
+<footer class="mt-5 bg-light footer-content">
+	<p class="text-center text-dark mb-0">© 2019 KT</p>
 </footer>
 <!--頁腳/結束-->
+
+
 <script>
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();
 });
 </script>
+
+<script>
+/*sticky nav 滑下來秀出nav並置頂 */
+let navbar = $(".navbar");
+
+$(window).scroll(function() {
+  let oTop = $(".section-2").offset().top - window.innerHeight;
+  if($(window).scrollTop()>oTop){
+     navbar.addClass("sticky");
+   }else{
+     navbar.removeClass("sticky");
+   }
+});
+</script>
+
 </body>
 </html>

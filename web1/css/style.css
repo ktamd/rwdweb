@@ -1,4 +1,37 @@
 *{font-family: '微軟正黑體';}
+
+.polyboard{border-radius: 0;}
+.topmenu{
+  background-color: blanchedalmond !important;
+  opacity:0.8;
+  box-shadow: 5px 2px 5px #888888;
+}
+.topmenu a{
+  color: #383838 !important;
+}
+.topmenu a:hover{
+  color: salmon !important;
+}
+
+.btn-a1{background-color: blanchedalmond;}
+.btn-a2{background-color:steelblue;}
+
+
+.nav-item:last-child{ padding-right: 2em;}
+.nav-item{ padding: 0.9em;}
+.navbar-brand{ padding-left: 1em;}
+.nav-link:hover{ color: black;}
+
+/*sticky*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(213, 44, 145,0.7);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
 /* 上下內距 */
 .box-30{
     padding-top: 30px;
